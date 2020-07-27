@@ -3,7 +3,7 @@
 O site Rocktseat é um projeto do bootcamp Launch Base da **[RocketSeat](https://rocketseat.com.br/)**, cujo objetivo é desenvolver um site que apresente a empresa, seus cursos e alguns vídeos tutoriais do seu canal do YouTube conforme o design apresentado. 
 
  <h1 align = center>
-    <img src="imagens/site.gif">
+    <img src="public/site.gif">
 </h1>
 
 ## 📚 Páginas
