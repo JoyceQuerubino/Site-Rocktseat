@@ -16,7 +16,7 @@ O site é composto por 4 diferentes páginas:
 Além disso, o site também deve apresentar um servidor próprio que reaproveite os layouts e mostre as páginas através da porta 5000.
 
  <h1 align = center>
-    <img src="public/paginas.jpg">
+    <img src="public/imagem.png">
 </h1>
 
   ## 💻 Tecnologias utilizadas
