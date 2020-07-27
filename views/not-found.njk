@@ -1,0 +1,47 @@
+
+{% extends "layout.njk" %}
+
+
+{% block content %}
+        <div id= "wrapper" >
+            <h1>RocketSeat</h1>
+            <h3>Você está perdido no espaço, é melhor voltar...</h3>
+
+            <!-- ANIMAÇÃO-->
+            <div class="anime">
+            </div>
+
+        </div>
+
+        <script src= "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie_svg.js"></script>
+
+        <!--Animação do texto escrevendo-->
+        <script>
+            function typeWriter(elemento) {
+                const textoArray = elemento.innerHTML.split('');
+                elemento.innerHTML = '';
+                textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                });
+            }
+
+            const titulo = document.querySelector('h3')
+            typeWriter(titulo)
+
+            //ANIMAÇÃO 
+            let animationArea = document.querySelector('.anime');
+
+            let animationObject = bodymovin.loadAnimation({
+                    container: animationArea,
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    autoloadSegments: false,
+                    path:'404-error.json'
+             });
+
+        </script>
+
+        <script src="scripts.js"></script>
+
+{% endblock %}

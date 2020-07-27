@@ -1,0 +1,91 @@
+    
+{% extends "layout.njk" %}
+    
+    {% block head %}
+
+    <title>Rocketseat - cursos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    {% endblock %}
+    
+    {% block content %}
+
+        <div id= "wrapper" >
+            <h1>Cursos</h1>
+        </div>
+
+        <section class="cards_cursos">
+            
+            <div class="card_cursos" id="starter">
+                <div class="circulo" style="border: 2px solid var(--cor-RocktSeat);">
+                    <div class="numeracao">
+                        <p style="color: var(--cor-RocktSeat);">01</p>
+                    </div>
+                </div>
+                <div class="cursos_image">
+                    <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="">
+                </div>
+                <div class="cursos_conteudo">
+                    <p><strong style= color:var(--cor-RocktSeat);>Torne-se um programados desejado</strong> no mercado com esses cursos gratuitos</p>
+                </div>
+                <div class="cursos_preco" style="background-color: var(--cor-RocktSeat);">
+                    <p>Grátis</p>
+                </div>
+            </div>
+
+            <div class="card_cursos" id="launchbase">
+                <div class="circulo" style="border: 2px solid var(--cor-Laranja);">
+                    <div class="numeracao">
+                        <p style="color: var(--cor-Laranja);">02</p>
+                    </div>
+                </div>
+                <div class="cursos_image">
+                    <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="">
+                </div>
+                <div class="cursos_conteudo">
+                    <p><strong style= color:var(--cor-Laranja);>Domine programação do zero</strong> e tenha acesso às melhores oportunidades do mercado</p>
+                </div>
+                <div class="cursos_preco" style="background-color: var(--cor-Laranja);">
+                    <p>Graranta sua vaga!</p>
+                </div>
+            </div>
+
+            <div class="card_cursos" id="gostack">
+                <div class="circulo" style="border: 2px solid var(--cor-Verde);">
+                    <div class="numeracao">
+                        <p style="color: var(--cor-Verde);">03</p>
+                    </div>
+                </div>
+                <div class="cursos_image">
+                    <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="">
+                </div>
+                <div class="cursos_conteudo">
+                    <p> <strong style= color:var(--cor-Verde)>Treinamento imersivo</strong>  nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+                </div>
+                <div class="cursos_preco" style="background-color: var(--cor-Verde);">
+                    <p>Graranta sua vaga!</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="modal-overlay-escuro">
+            <div class="div-branca">
+                
+                <a class="fecha-modal">
+                    <i class="material-icons">close</i>
+                </a>
+
+                <a class="expandir-modal">
+                    <i class= "material-icons">maximize</i>
+                </a>
+
+                <div class="div-branca-conteudo">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+        
+    {% endblock %}

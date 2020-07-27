@@ -1,0 +1,115 @@
+
+{% extends "layout.njk" %}
+
+    {% block head %}
+
+    <title>Rocketseat - aulas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    {% endblock %}
+
+    {% block content %}
+
+        <div id= "wrapper" >
+            <h1>Aulas</h1>
+        </div>
+
+        <!-- #### CARDS ####-->
+        <section class="cards">
+            <div class="card" id="GykTLqODQuU">
+                <div class="card_image_container">
+                    <img src="https://img.youtube.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="Capa do vídeo 1">
+                </div>
+                <div class="card_content">
+                    <p>Formulário Animado com JS puro e CSS Animation</p>
+                </div>
+                <div class="card_info">
+                    <p>57min</p>
+                    <p class="card_price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id = "HN1UjzRSdBk">
+                <div class="card_image_container">
+                    <img src="https://img.youtube.com/vi/HN1UjzRSdBk/maxresdefault.jpg" alt="Capa do vídeo 2">
+                </div>
+                <div class="card_content">
+                    <p>Desvendando o CSS Grid na prática </p>
+                </div>
+                <div class="card_info">
+                    <p>36min</p>
+                    <p class="card_price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id = "H91DhKPjhPk">
+                <div class="card_image_container">
+                    <img src="https://img.youtube.com/vi/H91DhKPjhPk/maxresdefault.jpg" alt="Capa do vídeo 3">
+                </div>
+                <div class="card_content">
+                    <p>Responsividade </p>
+                    <p>na Prática</p>
+                </div>
+                <div class="card_info">
+                    <p>1h30min</p>
+                    <p class="card_price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id = "nhW70H9H4gU">
+                <div class="card_image_container">
+                    <img src="https://img.youtube.com/vi/nhW70H9H4gU/maxresdefault.jpg" alt="Capa do vídeo 4">
+                </div>
+                <div class="card_content">
+                    <p>Espaçamentos e a mágica do CSS Box Model</p>
+                </div>
+                <div class="card_info">
+                    <p>39min</p>
+                    <p class="card_price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id = "vqrjFnq3-uo">
+                <div class="card_image_container">
+                    <img src="https://img.youtube.com/vi/vqrjFnq3-uo/maxresdefault.jpg" alt="Capa do vídeo 5">
+                </div>
+                <div class="card_content">
+                    <p>Criando Player de Áudio com Javascript </p>
+                </div>
+                <div class="card_info">
+                    <p>1h45min</p>
+                    <p class="card_price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id="TI4v4Y8yRjw">
+                <div class="card_image_container">
+                    <img src="https://img.youtube.com/vi/TI4v4Y8yRjw/maxresdefault.jpg" alt="Capa do vídeo 6">
+                </div>
+                <div class="card_content">
+                    <p>Style guides Javascript com ESLint e Prettier</p>
+                </div>
+                <div class="card_info">
+                    <p>12min</p>
+                    <p class="card_price">Free</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="modal-overlay">
+                <div class="modal">
+                    <a class="close-modal">
+                        <i class="material-icons">close</i>
+                    </a>
+                    <!-- Para colocar o vídeo-->
+                    <div class="modal-content">
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
+    
+                </div>
+        </div>
+
+        <script src="scripts.js"></script>
+
+    {% endblock %}       

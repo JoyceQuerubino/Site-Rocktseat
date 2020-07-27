@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+        
+
+        {% block head %}
+        
+        <title>Rocketseat</title>
+
+        {% endblock %}
+
+    </head>
+
+    <body>
+        <header>
+            <div class= "links"> 
+            <a href="/">Sobre</a>
+            <a href="/cursos">Cursos</a>
+            <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a>
+            <a href="/classes">Aulas</a>
+            </div>
+        </header>
+
+        {% block content %}
+
+        
+        {% endblock %}
+
+    </body>
+</html>

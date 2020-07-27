@@ -1,0 +1,321 @@
+
+
+:root{
+    --cor-roxa: #6331C6;
+    --cor-RocktSeat: #7159c1 ;
+    --cor-Verde: #04D361;
+    --cor-Laranja: #FD951F;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    border: 0;
+}
+body{
+    background:#282a36;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+header{
+    text-align: center;
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    background: rgba(0 ,0 ,0 , 0.1);
+}
+
+.links{
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-weight: 400;
+    margin: 0 16px ;
+    line-height: 28px; /*espessura da linha*/
+    text-decoration:none;
+    padding-bottom: 3px;
+}
+
+.links a:hover {
+    color: var(--cor-roxa);
+    transition: color 400ms;
+}
+
+#wrapper{
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+#wrapper img{
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 35px;
+    height: 350px;
+}
+
+/*ANIMAÇÃO*/
+#wrapper .anime {
+    width: 600px;
+    height: 500px;
+    transition: 1500ms ease;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#wrapper h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+    color: #957EE4;
+}
+
+#wrapper h2{
+    opacity: 0.9;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+
+/*---Pagina de not-found---*/
+#wrapper h3{
+    opacity: 0.9;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+h3::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+/*---Fim das confgirações da pagina de erro ---*/
+
+
+
+#wrapper p {
+    max-width: 500px;
+    margin: 32px auto; 
+    font-size: 18px;
+    line-height: 34px;
+}
+
+#links-footer a{
+    border-bottom: 1px solid var(--cor-roxa);
+}
+
+/* #### CARDS ####*/
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;  /*alinha ao meio*/
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+    background-color: var(--cor-RocktSeat);
+    cursor: pointer;
+}
+
+.card_image_container img{
+    width: 100%;
+}
+
+.card_content, 
+.card_info {
+    padding: 24px;
+}
+
+.card_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price{
+    background-color: var(--cor-RocktSeat);
+    filter: brightness(85%);
+    padding: 5px 20px; /*Para deixar o botão mais gordinho*/
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*#### MODAL OVERLAY ####*/
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7); /*utilizo para fazer fundos transparentes*/
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+ }
+
+ .modal{
+     background-color: black;
+     width: 90%;
+     height: 90%;
+     margin: 5vh auto;
+     position: relative;
+ }
+
+ .modal .close-modal{
+    color:white;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+
+ }
+
+ /*#### MODAL ATIVO ####*/
+ .modal-overlay.active{
+     opacity: 1;
+     visibility: visible;
+ }
+
+ iframe{
+     width: 100%;
+     height: 90%;
+     position: absolute;
+     top: 5%;
+ }
+
+
+ /*
+ ##############################
+ ###### PÁGINA DE CURSOS ######
+ ##############################
+ */
+
+ .cards_cursos{
+
+    max-width: 1050px;
+    margin: 0 auto;  /*alinha ao meio*/
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px
+ }
+
+ .card_cursos{
+    background: rgba(0 ,0 ,0 , 0.2);
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    cursor: pointer;
+
+ }
+.circulo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    margin: 5vh auto; /*Para centralizar as bolinhas*/
+}
+.numeracao{
+    margin: 1.5vh auto;
+    text-align: center;
+    font: 500;
+    font-size: 18px;
+    color: var(--cor-RocktSeat);
+}
+ .cursos_image{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+ }
+
+ .cursos_conteudo{
+    padding: 60px 25px;
+
+ }
+
+ .cursos_conteudo p {
+    line-height: 25pt;
+ }
+
+ .cursos_preco{
+     
+     filter: brightness(90%);
+     padding: 10px 20px;
+     border-radius: 20px;
+     width: 60%;
+     margin: auto;
+     margin-bottom: 5px;
+     
+ }
+
+/*
+################################
+### MODAL BRANCO COM OVERLAY ###
+################################
+*/
+
+.modal-overlay-escuro{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+    opacity: 0; 
+    visibility: hidden;
+}
+
+.modal-overlay-escuro.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.div-branca{
+    background-color: #242631;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.fecha-modal{
+    color: white;
+    position: absolute;
+    right: 16px;
+    top: 16px; 
+    cursor: pointer;
+}
+
+.div-branca .expandir-modal{
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.div-branca.maximize {
+    width: 100%;
+    height: 100%;
+    margin: 1vh auto;
+}
+
