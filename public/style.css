@@ -136,6 +136,7 @@ h3::after{
 .card{
     background-color: var(--cor-RocktSeat);
     cursor: pointer;
+    display: grid;
 }
 
 .card_image_container img{
@@ -150,6 +151,7 @@ h3::after{
 .card_info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card_price{

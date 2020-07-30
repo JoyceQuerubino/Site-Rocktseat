@@ -4,16 +4,15 @@
 
 {% block content %}
         <div id= "wrapper" >
-            <img src="https://pbs.twimg.com/profile_images/1271517147349626881/Mf1UjRa0_400x400.jpg" alt="Logo RocketSeat">
-            <h1>RocketSeat</h1>
-            <h2>Ensinando alunos a Codar!</h2>
-            <p>Imagine você dominando as mesmas tecnologias adotadas pelos melhores times do mundo, construindo aplicações de alta performance e se destacando entre os maiores programadores.</p>
+            <img src="{{ about.avatar_url}}" alt="Imagem de {{ about.name }}">
+            <h1>{{ about.name }}</h1>
+            <h2>{{ about.role }}</h2>
+            <p>{{about.description}}</p>
         </div>
 
         <div id="links-footer" class= "links" >
-            <a href="https://github.com/JoyceQuerubino" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/joyce-querubino/"  target="_blank">Linkedin</a>
-            <a href="/"  target="_blank">Facebook</a>
-            
+            {% for link in about.links %}
+            <a href="{{ link.url}}" target="_blank">{{link.name}}</a>
+            {% endfor %}
         </div>
 {% endblock %}
