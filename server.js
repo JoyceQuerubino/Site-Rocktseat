@@ -1,7 +1,11 @@
+
+// Importando arquivos para o servidor
 const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
+
+const videos = require("./data")
 
 // Adicionando CSS
 server.use(express.static('public'))
@@ -28,9 +32,9 @@ server.get("/cursos", function (req , res){
     return res.render("cursos")
 })
 
-// Rota da página classes
+// Rota da página classes - aulas
 server.get("/classes", function (req , res){
-    return res.render("classes")
+    return res.render("classes", {items: videos})
 })
 
 // Página de erro, APOS TODAS AS ROTAS
