@@ -15,7 +15,8 @@ server.set("view engine" , "njk")
 
 nunjucks.configure("views" , {
     express:server,
-    autoescape: false
+    autoescape: false,
+    noCache:true
 })
 
 //Criando porta
@@ -41,7 +42,7 @@ server.get("/", function (req , res){
 
 // Rota da página cursos 
 server.get("/cursos", function (req , res){
-    return res.render("cursos")
+    return res.render("cursos",)
 })
 
 // Rota da página classes - aulas

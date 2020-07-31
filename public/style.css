@@ -321,3 +321,18 @@ h3::after{
     margin: 1vh auto;
 }
 
+/*=== FEATURED ===*/
+.featured-wrapper.card_image_container{
+    position: relative;
+}
+
+.featured{
+    position: absolute;
+    
+    background: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    right: 5px;
+    border-radius: 16px;
+    top: -9px;
+}

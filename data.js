@@ -5,7 +5,8 @@ module.exports = [
         id: "GykTLqODQuU",
         title: "Formulário Animado com JS puro e CSS Animation",
         duration: "57min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "HN1UjzRSdBk",
@@ -17,7 +18,8 @@ module.exports = [
         id: "H91DhKPjhPk",
         title: "Responsividade na prática ",
         duration: "1h30min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "nhW70H9H4gU",
@@ -29,7 +31,8 @@ module.exports = [
         id: "vqrjFnq3-uo",
         title: "Criando Player de Áudio com Javascript",
         duration: "1h45min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "TI4v4Y8yRjw",
