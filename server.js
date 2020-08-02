@@ -40,6 +40,15 @@ server.get("/", function (req , res){
     return res.render("about", {about})
 })
 
+//Rota da página vídeos
+server.get("/video", function (req , res){
+    const id = req.query.id;
+
+    res.send(id)
+})
+
+
+
 // Rota da página cursos 
 server.get("/cursos", function (req , res){
     return res.render("cursos",)
