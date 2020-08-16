@@ -6,9 +6,7 @@ const cards = document.querySelectorAll('.card')
 for (let card of cards ){
     card.addEventListener( "click", function(){
         const videoId = card.getAttribute("id")
-        modalOverlay.classList.add ('active')
-        // Estamos dizendo: "Procure o iframe dentro do modalOverlay"
-        modalOverlay.querySelector("iframe").src =  `https://www.youtube.com/embed/${videoId}`
+        window.location.href = `/video?id=${videoId}`
     })
 }
 
@@ -31,8 +29,8 @@ A solução é usar o javascript p/ acrescentar um IF. Aí seu script vai ficar 
 ver que essa classe existe ( quando o modal for renderizado ), ele coloca o eventListener de 
 click no elemento que tiver a classe .close-modal
 O IF é literalmente "navegador, quando a condição XYZ for verdadeira, faça isso"
-*/
 
+Exemplo: 
 const closeModal = document.querySelector('.close-modal');
 
 if (closeModal) {
@@ -42,7 +40,7 @@ if (closeModal) {
   });
 }
 
-
+*/
 
 
 

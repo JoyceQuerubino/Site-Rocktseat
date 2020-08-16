@@ -27,7 +27,7 @@ server.listen(5000, function() {
 // Rota da página principal - home
 server.get("/", function (req , res){   
     const about = {
-        avatar_url: "https://pbs.twimg.com/profile_images/1271517147349626881/Mf1UjRa0_400x400.jpg", 
+        avatar_url: "https://cdn-images-1.medium.com/max/1200/1*TkXVfLTwsHdwpUEjGzdi9w.jpeg", 
         name: "RocketSeat",
         role: "Ensinando alunos a Codar!", 
         description: "Imagine você dominando as mesmas tecnologias adotadas pelos melhores times do mundo, construindo aplicações de alta performance e se destacando entre os maiores programadores.",
@@ -42,12 +42,10 @@ server.get("/", function (req , res){
 
 //Rota da página vídeos
 server.get("/video", function (req , res){
-    const id = req.query.id;
+    const id = req.query.id
 
     const video = videos.find(function(video){
-        if(video.id == id){
-            return true; 
-        }
+      return video.id == id
     })
 
     if(!video){
