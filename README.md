@@ -44,4 +44,6 @@ obs.: Para o funcionamento correto da extensão Nunjucks, realize a seguinte con
 ```
 ---
 
-🐱‍👤 Desenvolvido por Joyce Querubino  
+<p align= center>
+🐱‍👤 Desenvolvido por <strong>Joyce Querubino</strong>   -----   Me adicione no <a href="https://www.linkedin.com/in/joyce-querubino/"target="_blank">Linkedin</a>
+</p>
